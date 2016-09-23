@@ -26,7 +26,7 @@
 
 import React,{Component} from 'react';
 import {View,Text} from 'react-native';
-
+import Timer from './views/Timer'
 class Playground extends Component {
   constructor() {
     super();
@@ -44,9 +44,9 @@ class Playground extends Component {
 
   render() {
     return (
-      <View style={{backgroundColor: '#336699', flex: 1,}}>
-        <Text>Test</Text>
-      </View>
+      // <View style={{backgroundColor: '#336699', flex: 1,}}>
+        <Timer />
+      // </View>
     );
   }
 }
