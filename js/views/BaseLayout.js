@@ -6,8 +6,14 @@ import {
   StyleSheet,
   View,
   Text,
+  Image,
+  Animated,
+  ScrollView,
+  TouchableOpacity
 } from 'react-native';
+
 import Util from '../utils/Util';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 class Counter extends Component {
   render() {
