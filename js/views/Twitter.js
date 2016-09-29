@@ -3,7 +3,6 @@
 import React, { Component } from 'react';
 
 import {
-  StyleSheet,
   View,
   Text,
   Image,
@@ -16,6 +15,7 @@ import {
 } from 'react-native';
 
 import Util from '../utils/Util';
+const StyleSheet  = require('../utils/CustomStyleSheet');
 import Icon from 'react-native-vector-icons/Ionicons';
 import TabNavigator from 'react-native-tab-navigator';
 
@@ -128,7 +128,7 @@ class TwitterPost extends Component {
 						tintColor="#ddd"
 					/>
 			}>
-			<Image source={require('../img/day3.png')} style={{top:-20,width:Util.size.width, height:Util.size.height-110}}></Image>
+			<Image source={require('../img/day3.png')} style={styles.postImg}></Image>
 			</ScrollView>
 			)
 	}
@@ -138,7 +138,7 @@ class TwitterFlow extends Component{
   render() {
     return(
       <View>
-        <View style={{flexDirection:'row',paddingBottom:5,borderBottomWidth:2,borderBottomColor:'#eee', paddingTop:30,backgroundColor:'#fff',}}>
+        <View style={styles.header}>
           <View style={styles.navLeft}>
             <Icon name="ios-add" size={23} style={{color:"#1b95e0", paddingLeft:10}}></Icon>
           </View>
@@ -286,6 +286,25 @@ const FacebookTabBar = React.createClass({
 
 
 const styles = StyleSheet.create({
+	postImg:{
+		width:Util.size.width, height:Util.size.height-110,
+		ios:{
+			top:-20,
+		},
+		android:{
+			top:5,
+		}
+	},
+	header:{
+		flexDirection:'row',paddingBottom:5,borderBottomWidth:2,borderBottomColor:'#eee', 
+		backgroundColor:'#fff',
+		ios:{
+			paddingTop:30,
+		},
+		android:{
+			paddingTop:5,
+		}
+	},
 	navLeft:{
 		flex:1,
 		// backgroundColor:'green',
