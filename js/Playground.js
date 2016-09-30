@@ -30,6 +30,7 @@ import Timer from './views/Timer';
 import Weather from './views/Weather';
 import Twitter from './views/Twitter';
 import Test from './views/test';
+import Spotify from './views/Spotify';
 class Playground extends Component {
   constructor() {
     super();
@@ -48,7 +49,7 @@ class Playground extends Component {
   render() {
     return (
       // <View style={{backgroundColor: '#336699', flex: 1,}}>
-        <Twitter />
+        <Spotify />
       // </View>
     );
   }
