@@ -31,6 +31,15 @@ import Weather from './views/Weather';
 import Twitter from './views/Twitter';
 import Test from './views/test';
 import Spotify from './views/Spotify';
+import TwitterUser from './views/TwitterUser';
+import TumblrAnimation from './views/TumblrAnimation';
+import TwitterUi from './views/TwitterUi';
+import SwipeCard from './views/SwipeCard';
+import Day15 from './views/Day15';
+import Password from './views/Password';
+import SortableGrid from './views/SortableGrid';
+import SingleReminder from './views/SingleReminder';
+import MultiReminder from './views/MultiReminder';
 class Playground extends Component {
   constructor() {
     super();
@@ -49,7 +58,7 @@ class Playground extends Component {
   render() {
     return (
       // <View style={{backgroundColor: '#336699', flex: 1,}}>
-        <Spotify />
+        <MultiReminder />
       // </View>
     );
   }
