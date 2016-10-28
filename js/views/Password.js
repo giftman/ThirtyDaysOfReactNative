@@ -4,7 +4,7 @@ import React,{Component} from 'react';
 import {Image,StyleSheet,Text,View} from 'react-native';
 import Util from '../utils/Util';
 
-import {PasswordGesture} from 'react-native-gesture-password';
+import PasswordGesture from 'react-native-gesture-password';
 
 class SetPassword extends Component{
   prop:{

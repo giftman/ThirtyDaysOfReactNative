@@ -40,6 +40,12 @@ import Password from './views/Password';
 import SortableGrid from './views/SortableGrid';
 import SingleReminder from './views/SingleReminder';
 import MultiReminder from './views/MultiReminder';
+import GoogleNow from './views/GoogleNow';
+import D3 from './views/D3';
+import FacebookTab from './views/FacebookTab';
+import DrawableLayout from './views/DrawableLayout';
+import IMessage from './views/IMessage';
+import IMessagePick from './views/IMessagePick';
 class Playground extends Component {
   constructor() {
     super();
@@ -58,7 +64,7 @@ class Playground extends Component {
   render() {
     return (
       // <View style={{backgroundColor: '#336699', flex: 1,}}>
-        <MultiReminder />
+        <IMessagePick />
       // </View>
     );
   }
